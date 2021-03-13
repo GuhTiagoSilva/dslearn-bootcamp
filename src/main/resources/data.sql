@@ -17,3 +17,8 @@ INSERT INTO tb_course (name, img_uri, img_gray_uri) VALUES ('Bootcamp HTML', 'ht
 
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('1.0','2021-03-13T03:00:00','2021-06-13T03:00:00',1);
 INSERT INTO tb_offer (edition, start_moment, end_moment, course_id) VALUES ('2.0','2021-12-13T03:00:00','2021-12-13T03:00:00',1);
+
+
+INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('Trilha HTML','Trilha Principal do Curso',1,'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Ftraining-course-training-3250007%2F&psig=AOvVaw2A_cqjjhdluD1XQ_gExw4l&ust=1615748599338000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDU09z6re8CFQAAAAAdAAAAABAD',1,1);
+INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('Fórum','Tire suas dúvidas',2,'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Ftraining-course-training-3250007%2F&psig=AOvVaw2A_cqjjhdluD1XQ_gExw4l&ust=1615748599338000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDU09z6re8CFQAAAAAdAAAAABAD',2,2);
+INSERT INTO tb_resource (title, description, position, img_uri, type, offer_id) VALUES ('Lives','Lives exclusivas para a turma',3,'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fillustrations%2Ftraining-course-training-3250007%2F&psig=AOvVaw2A_cqjjhdluD1XQ_gExw4l&ust=1615748599338000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKDU09z6re8CFQAAAAAdAAAAABAD',0,1);
