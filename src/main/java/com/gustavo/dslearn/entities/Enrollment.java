@@ -33,7 +33,7 @@ public class Enrollment implements Serializable {
 	private boolean onlyUpdate;
 	
 	@ManyToMany(mappedBy = "enrollmentsDone")
-	private Set<Lesson> lessons = new HashSet<>();
+	private Set<Lesson> lessonsDone = new HashSet<>();
 
 	public Enrollment() {
 
@@ -96,6 +96,10 @@ public class Enrollment implements Serializable {
 
 	public void setOnlyUpdate(boolean onlyUpdate) {
 		this.onlyUpdate = onlyUpdate;
+	}
+	
+	public Set<Lesson> getLessons() {
+		return lessonsDone;
 	}
 
 }
