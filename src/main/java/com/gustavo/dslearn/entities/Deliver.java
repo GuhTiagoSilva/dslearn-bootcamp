@@ -49,7 +49,7 @@ public class Deliver implements Serializable {
 		
 	}
 
-	public Deliver(Long id, String uri, Instant moment, DeliverStatus status, String feedback, Integer correctCount, Lesson lesson) {
+	public Deliver(Long id, String uri, Instant moment, DeliverStatus status, String feedback, Integer correctCount, Enrollment enrollment ,Lesson lesson) {
 		super();
 		this.id = id;
 		this.uri = uri;
@@ -58,6 +58,7 @@ public class Deliver implements Serializable {
 		this.feedback = feedback;
 		this.correctCount = correctCount;
 		this.lesson = lesson;
+		this.enrollment = enrollment;
 	}
 
 	public Long getId() {
@@ -110,6 +111,14 @@ public class Deliver implements Serializable {
 	
 	public Lesson getLesson() {
 		return lesson;
+	}
+	
+	public Enrollment getEnrollment() {
+		return enrollment;
+	}
+	
+	public void setEnrollment(Enrollment enrollment) {
+		this.enrollment = enrollment;
 	}
 
 	@Override
