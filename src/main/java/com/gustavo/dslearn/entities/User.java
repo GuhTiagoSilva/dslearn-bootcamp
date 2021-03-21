@@ -99,6 +99,14 @@ public class User implements Serializable, UserDetails {
 		return notifications;
 	}
 	
+	public Set<Role> getRoles() {
+		return roles;
+	}
+	
+	public void setRoles(Set<Role> roles) {
+		this.roles = roles;
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
