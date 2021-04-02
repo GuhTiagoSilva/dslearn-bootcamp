@@ -42,7 +42,7 @@ INSERT INTO tb_lesson (title, position, section_id) VALUES ('Aula 3 do Capítulo
 INSERT INTO tb_content (id, text_content, video_uri) VALUES(3,'Material de Apoio do capítulo', 'https://www.youtube.com/watch?v=KsGYZqQNK9k');
 
 INSERT INTO tb_lesson (title, position, section_id) VALUES ('Tarefa do Capítulo 1',4,1);
-INSERT INTO tb_task (id, description, question_count, approval_account, weight, due_date) VALUES(4,'Tarefa do capítulo 1', 4, 10, 1, '2021-03-25T03:00:00');
+INSERT INTO tb_task (id, description, question_count, approval_count, weight, due_date) VALUES(4,'Tarefa do capítulo 1', 5, 4, 1.0, '2021-03-25T03:00:00');
 
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (1, 1, 1);
 INSERT INTO tb_lessons_done (lesson_id, user_id, offer_id) VALUES (2, 1, 1);

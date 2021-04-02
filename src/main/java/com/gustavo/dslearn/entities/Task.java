@@ -16,7 +16,7 @@ public class Task extends Lesson {
 
 	private Integer questionCount;
 
-	private Integer approvalAccount;
+	private Integer approvalCount;
 
 	private Double weight;
 
@@ -28,11 +28,11 @@ public class Task extends Lesson {
 	}
 
 	public Task(Long id, String title, Integer position, Section section, String description, Integer questionCount,
-			Integer approvalAccount, Double weight, Instant dueDate) {
+			Integer approvalCount, Double weight, Instant dueDate) {
 		super(id, title, position, section);
 		this.description = description;
 		this.questionCount = questionCount;
-		this.approvalAccount = approvalAccount;
+		this.approvalCount = approvalCount;
 		this.weight = weight;
 		this.dueDate = dueDate;
 	}
@@ -53,12 +53,12 @@ public class Task extends Lesson {
 		this.questionCount = questionCount;
 	}
 
-	public Integer getApprovalAccount() {
-		return approvalAccount;
+	public Integer getApprovalCcount() {
+		return approvalCount;
 	}
 
-	public void setApprovalAccount(Integer approvalAccount) {
-		this.approvalAccount = approvalAccount;
+	public void setApprovalCcount(Integer approvalCount) {
+		this.approvalCount = approvalCount;
 	}
 
 	public Double getWeight() {

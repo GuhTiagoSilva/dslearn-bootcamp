@@ -14,7 +14,7 @@ import com.gustavo.dslearn.dto.NotificationDTO;
 import com.gustavo.dslearn.services.NotificationService;
 
 @RestController
-@RequestMapping("/notifications")
+@RequestMapping(value = "/notifications")
 public class NotificationResource {
 
 	@Autowired
